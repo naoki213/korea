@@ -45,6 +45,7 @@
   <nav class="hero-nav" aria-label="しおり内ナビ">
     <a href="#overview">旅の概要</a>
     <a href="#flights">航空券・鉄道</a>
+    <a href="#hotel">宿泊先</a>
     <a href="#match">試合情報</a>
     <a href="#schedule">タイムスケジュール</a>
     <a href="#spots">観光・グルメ</a>
@@ -125,28 +126,44 @@
     </div>
     <div class="flight-card flight-card--train">
       <div class="flight-card-head">
-        <span class="flight-tag">🚄 KTX（韓国高速鉄道）</span>
+        <span class="flight-tag">🚄 KTX 이음（韓国高速鉄道）</span>
         <span class="flight-date">2026年8月11日（火）</span>
       </div>
       <div class="flight-route">
         <div class="flight-point">
-          <span class="flight-time">ソウル駅</span>
-          <span class="flight-airport">発</span>
+          <span class="flight-time">16:11</span>
+          <span class="flight-airport">ソウル駅 発</span>
         </div>
-        <span class="flight-arrow">🚄 約1.5〜2時間</span>
+        <span class="flight-arrow">🚄 2時間11分・乗り換えなし</span>
         <div class="flight-point">
-          <span class="flight-time">江陵駅</span>
-          <span class="flight-airport">着</span>
+          <span class="flight-time">18:22</span>
+          <span class="flight-airport">江陵（カンヌン）駅 着</span>
         </div>
       </div>
-      <p class="flight-meta">座席：Car.10 Seat.1A・1B（エコノミークラス）／お二人分 予約済み ※発着時刻は要確認</p>
+      <p class="flight-meta">座席：Car.10 Seat.1A・1B（エコノミークラス）／お二人分 予約済み</p>
     </div>
-    <p class="note-banner note-banner--dark">✈️ 往路は<strong>金浦空港（GMP）</strong>着、復路は<strong>仁川空港（ICN）</strong>発の「オープンジョー」です。空港が異なるので現地での移動ルートにご注意ください。KTXの発着時刻が分かり次第、タイムスケジュールに反映します。</p>
+    <p class="note-banner note-banner--dark">✈️ 往路は<strong>金浦空港（GMP）</strong>着、復路は<strong>仁川空港（ICN）</strong>発の「オープンジョー」です。空港が異なるので現地での移動ルートにご注意ください。江陵駅到着が18:22のため、キックオフ(19:30)まで約1時間しかありません。駅から競技場へは速やかに移動しましょう。</p>
+  </section>
+
+  <!-- ===== HOTEL ===== -->
+  <section class="section" id="hotel">
+    <h2 class="section-title"><span class="section-num">03</span>宿泊先 <span class="badge badge--plan">確認中</span></h2>
+    <div class="hotel-card">
+      <div class="hotel-card-body">
+        <h3>ホテル名・住所を確認中です</h3>
+        <p>予約サイトへのリンクからページ内容を取得できなかったため、ホテル名と住所が分かり次第、地図とあわせてこちらに反映します。</p>
+        <div class="hotel-links">
+          <a href="https://www.jtb.co.jp/ovs_htl/detail/search_detail/695553/" target="_blank" rel="noopener" class="hotel-link">JTBの予約ページを開く ↗</a>
+          <a href="https://jp.hotels.com/ho3594418240/" target="_blank" rel="noopener" class="hotel-link">Hotels.comの予約ページを開く ↗</a>
+        </div>
+      </div>
+    </div>
+    <p class="note-banner">🏨 ホテル名・住所を教えていただければ、地図リンク付きで見やすく表示します。</p>
   </section>
 
   <!-- ===== MATCH INFO ===== -->
   <section class="section section--dark" id="match">
-    <h2 class="section-title"><span class="section-num">03</span>試合情報 <span class="badge badge--fixed">確定</span></h2>
+    <h2 class="section-title"><span class="section-num">04</span>試合情報 <span class="badge badge--fixed">確定</span></h2>
     <div class="ticket">
       <div class="ticket-main">
         <p class="ticket-comp">AFCチャンピオンズリーグ・エリート（ACLE）2026/27<br>プレリミナリーステージ プレーオフ（1試合制ノックアウト）</p>
@@ -174,7 +191,7 @@
 
   <!-- ===== SCHEDULE ===== -->
   <section class="section" id="schedule">
-    <h2 class="section-title"><span class="section-num">04</span>タイムスケジュール</h2>
+    <h2 class="section-title"><span class="section-num">05</span>タイムスケジュール</h2>
 
     <div class="day-tabs" role="tablist" aria-label="日程タブ">
       <button class="day-tab is-active" data-day="1" role="tab" aria-selected="true">
@@ -193,11 +210,12 @@
       <ol class="timeline">
         <li class="tl-item"><span class="tl-time">10:25</span><span class="tl-icon">🛫</span><div class="tl-body"><h4>関西国際空港（KIX）出発</h4><p>Peach Aviation MM737 便</p></div><span class="badge badge--fixed">確定</span></li>
         <li class="tl-item"><span class="tl-time">12:20</span><span class="tl-icon">🛬</span><div class="tl-body"><h4>金浦国際空港（GMP）到着</h4><p>入国審査・両替を済ませて空港鉄道・地下鉄乗り場へ</p></div><span class="badge badge--fixed">確定</span></li>
-        <li class="tl-item"><span class="tl-time">13:00</span><span class="tl-icon">🚇</span><div class="tl-body"><h4>金浦空港 → ソウル駅</h4><p>空港鉄道(AREX)または地下鉄で移動、KTX乗り場へ</p></div><span class="badge badge--plan">提案</span></li>
-        <li class="tl-item"><span class="tl-time">14:00</span><span class="tl-icon">🚄</span><div class="tl-body"><h4>ソウル駅 → 江陵（KTX）</h4><p>予約済みのKTXで移動。所要約1.5〜2時間 ※乗車時刻は電車チケットをご確認ください</p></div><span class="badge badge--fixed">確定（時刻確認中）</span></li>
-        <li class="tl-item"><span class="tl-time">16:00</span><span class="tl-icon">🍜</span><div class="tl-body"><h4>江陵到着・軽食</h4><p>江陵中央市場で海鮮グルメを食べ歩き</p></div><span class="badge badge--plan">提案</span></li>
-        <li class="tl-item"><span class="tl-time">17:30</span><span class="tl-icon">☕</span><div class="tl-body"><h4>安木（アンモク）コーヒー通りでひと休み</h4><p>海沿いの人気カフェ通りで絶景コーヒータイム</p></div><span class="badge badge--plan">提案</span></li>
-        <li class="tl-item"><span class="tl-time">18:30</span><span class="tl-icon">🚕</span><div class="tl-body"><h4>江陵総合競技場へ移動</h4><p>試合前は周辺が混雑するため余裕を持って移動</p></div><span class="badge badge--plan">提案</span></li>
+        <li class="tl-item"><span class="tl-time">13:00</span><span class="tl-icon">🚇</span><div class="tl-body"><h4>金浦空港 → ソウル駅</h4><p>空港鉄道(AREX)または地下鉄で移動</p></div><span class="badge badge--plan">提案</span></li>
+        <li class="tl-item"><span class="tl-time">13:40</span><span class="tl-icon">🍜</span><div class="tl-body"><h4>ソウル駅周辺で早めの昼食</h4><p>荷物はコインロッカーへ。KTX発車まで約2.5時間あります</p></div><span class="badge badge--plan">提案</span></li>
+        <li class="tl-item"><span class="tl-time">15:40</span><span class="tl-icon">🎫</span><div class="tl-body"><h4>ソウル駅でKTX乗車準備</h4><p>余裕をもってホームへ</p></div><span class="badge badge--plan">提案</span></li>
+        <li class="tl-item"><span class="tl-time">16:11</span><span class="tl-icon">🚄</span><div class="tl-body"><h4>ソウル駅 → 江陵（KTX 이음）出発</h4><p>予約済み・Car.10 Seat.1A/1B・所要2時間11分（乗り換えなし）</p></div><span class="badge badge--fixed">確定</span></li>
+        <li class="tl-item"><span class="tl-time">18:22</span><span class="tl-icon">🚉</span><div class="tl-body"><h4>江陵（カンヌン）駅 到着</h4><p>キックオフまで約1時間。寄り道せず競技場へ</p></div><span class="badge badge--fixed">確定</span></li>
+        <li class="tl-item"><span class="tl-time">18:35</span><span class="tl-icon">🚌</span><div class="tl-body"><h4>江陵駅 → 江陵総合競技場</h4><p>市内バス313番（江陵駅〜競技場、毎時1本）または111・112・119番で「e-편한세상」下車徒歩5分。本数が少ないため<strong>タクシー利用が確実</strong>（約10〜15分）</p></div><span class="badge badge--plan">提案</span></li>
         <li class="tl-item tl-item--match"><span class="tl-time">19:30</span><span class="tl-icon">⚽</span><div class="tl-body"><h4>ガンバ大阪 vs 江原FC キックオフ</h4><p>ACLEプレリミナリーステージ プレーオフ @江陵総合競技場</p></div><span class="badge badge--fixed">確定</span></li>
         <li class="tl-item"><span class="tl-time">21:30</span><span class="tl-icon">🏨</span><div class="tl-body"><h4>試合終了・江陵市内のホテルへ</h4><p>お疲れさまでした！ゆっくり休みましょう</p></div><span class="badge badge--plan">提案</span></li>
       </ol>
@@ -235,7 +253,7 @@
 
   <!-- ===== SPOTS / GOURMET ===== -->
   <section class="section section--soft" id="spots">
-    <h2 class="section-title"><span class="section-num">05</span>観光・グルメ ガイド</h2>
+    <h2 class="section-title"><span class="section-num">06</span>観光・グルメ ガイド</h2>
 
     <h3 class="city-title">🌊 江陵（カンヌン）エリア</h3>
     <div class="card-grid">
@@ -323,7 +341,7 @@
 
   <!-- ===== TIPS ===== -->
   <section class="section" id="tips">
-    <h2 class="section-title"><span class="section-num">06</span>旅のポイント</h2>
+    <h2 class="section-title"><span class="section-num">07</span>旅のポイント</h2>
     <div class="tips-grid">
       <div class="tip-card">
         <span class="tip-icon">🚄</span>

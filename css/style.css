@@ -320,6 +320,58 @@ main { position: relative; z-index: 1; }
   box-shadow: none;
 }
 
+/* ===== HOTEL ===== */
+.hotel-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.hotel-card-body { padding: 1.8rem 2rem; }
+.hotel-card-body h3 { margin: 0 0 0.6rem; font-family: var(--serif); font-size: 1.15rem; }
+.hotel-card-body > p { margin: 0 0 1.2rem; font-size: 0.9rem; color: var(--ink-soft); }
+
+.hotel-map { display: block; width: 100%; border: 0; height: 260px; }
+
+.hotel-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  margin: 0 0 1rem;
+}
+.hotel-address .pin { font-size: 1.1rem; }
+
+.hotel-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.hotel-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  border: 1px solid var(--coral);
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.hotel-link:hover { background: var(--coral); color: var(--white); }
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--navy);
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  text-decoration: none;
+}
+
 /* ===== TICKET (MATCH) ===== */
 .ticket {
   max-width: 1000px;
