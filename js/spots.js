@@ -146,6 +146,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const tipEl = document.getElementById("spotModalTip");
 
   let lastFocused = null;
+  let lockedScrollY = 0;
+
+  function lockScroll() {
+    lockedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${lockedScrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
+  }
+
+  function unlockScroll() {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+    // Restore instantly: the page has "scroll-behavior: smooth" for anchor
+    // nav, which would otherwise animate this jump and race with the next
+    // lockScroll() reading window.scrollY mid-animation.
+    const html = document.documentElement;
+    const prevBehavior = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    window.scrollTo(0, lockedScrollY);
+    html.style.scrollBehavior = prevBehavior;
+  }
 
   function openModal(key) {
     const data = SPOT_DETAILS[key];
@@ -173,13 +199,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     lastFocused = document.activeElement;
     backdrop.hidden = false;
+    lockScroll();
     closeBtn.focus();
-    document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
+    if (backdrop.hidden) return;
     backdrop.hidden = true;
-    document.body.style.overflow = "";
+    unlockScroll();
     if (lastFocused) lastFocused.focus();
   }
 
