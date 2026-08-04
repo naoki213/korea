@@ -161,12 +161,45 @@
       <p class="flight-meta">座席：Car.10 Seat.1A・1B（エコノミークラス）／お二人分 予約済み</p>
       <div class="qr-grid">
         <figure class="qr-card">
-          <img src="img/ktx-qr-kato.png" alt="KTX乗車QRコード（加藤様・Car.10 Seat.1A）" loading="lazy">
+          <button type="button" class="qr-toggle" aria-expanded="false">
+            <img class="qr-img" src="img/ktx-qr-kato.png" alt="KTX乗車QRコード（加藤様・Car.10 Seat.1A）" loading="lazy">
+            <span class="qr-placeholder"><span class="qr-placeholder-icon">🎫</span>タップしてQRを表示</span>
+          </button>
           <figcaption>加藤様 ｜ Car.10 Seat.1A</figcaption>
         </figure>
         <figure class="qr-card">
-          <img src="img/ktx-qr-nishikawa.png" alt="KTX乗車QRコード（西川様・Car.10 Seat.1B）" loading="lazy">
+          <button type="button" class="qr-toggle" aria-expanded="false">
+            <img class="qr-img" src="img/ktx-qr-nishikawa.png" alt="KTX乗車QRコード（西川様・Car.10 Seat.1B）" loading="lazy">
+            <span class="qr-placeholder"><span class="qr-placeholder-icon">🎫</span>タップしてQRを表示</span>
+          </button>
           <figcaption>西川様 ｜ Car.10 Seat.1B</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="flight-card flight-card--train">
+      <div class="flight-card-head">
+        <span class="flight-tag">🚄 KTX-EUM（韓国高速鉄道・帰り）</span>
+        <span class="flight-date">2026年8月12日（水）</span>
+      </div>
+      <div class="flight-route">
+        <div class="flight-point">
+          <span class="flight-time">12:23</span>
+          <span class="flight-airport">江陵（カンヌン）駅 発</span>
+        </div>
+        <span class="flight-arrow">🚄 2時間10分・乗り換えなし</span>
+        <div class="flight-point">
+          <span class="flight-time">14:33</span>
+          <span class="flight-airport">ソウル駅 着</span>
+        </div>
+      </div>
+      <p class="flight-meta">列車：KTX-EUM 814 ｜ 座席：車両9 Seat.4A・車両10 Seat.5C（エコノミークラス）／お二人分 予約済み・バーコード1枚</p>
+      <div class="qr-grid qr-grid--single">
+        <figure class="qr-card">
+          <button type="button" class="qr-toggle" aria-expanded="false">
+            <img class="qr-img" src="img/ktx-qr-return.png" alt="KTX乗車QRコード（帰り・加藤様/西川様共通・車両9 Seat.4A/車両10 Seat.5C）" loading="lazy">
+            <span class="qr-placeholder"><span class="qr-placeholder-icon">🎫</span>タップしてQRを表示</span>
+          </button>
+          <figcaption>加藤様・西川様（お二人） ｜ 車両9 Seat.4A／車両10 Seat.5C</figcaption>
         </figure>
       </div>
     </div>
@@ -395,11 +428,13 @@
     <span class="modal-emoji" id="spotModalEmoji"></span>
     <h3 class="modal-title" id="spotModalTitle"></h3>
     <dl class="modal-facts" id="spotModalFacts"></dl>
+    <a class="modal-video-link" id="spotModalVideo" target="_blank" rel="noopener" hidden>▶️ YouTubeでVlog・雰囲気動画を見る ↗</a>
     <p class="modal-tip" id="spotModalTip"></p>
   </div>
 </div>
 
 <script src="js/spots.js"></script>
 <script src="js/quicknav.js"></script>
+<script src="js/qrtoggle.js"></script>
 </body>
 </html>
