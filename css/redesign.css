@@ -123,12 +123,8 @@ main { width: min(100%, 1180px); margin: 0 auto; }
 .hotel-map { filter: saturate(.75) contrast(.95); }
 .hotel-link { border-radius: 999px; }
 
-.ticket { border: 1px solid rgba(255,255,255,.16); border-radius: 28px; background: linear-gradient(145deg, #082743, #061827); box-shadow: 0 28px 70px rgba(0,0,0,.25); }
-.ticket-main { padding: clamp(1.5rem, 5vw, 3rem); color: #eef2f5; }
-.ticket-comp { color: #8fb1c9; }
-.td-value { color: #eef2f5; }
+.match-info-img { border-radius: var(--app-radius); }
 .ticket-note { color: #9fb4c4; }
-.ticket-teams { font-size: clamp(1.4rem, 5vw, 2.5rem); }
 .ticket-view-btn { background: var(--app-red); color: white; box-shadow: 0 12px 28px rgba(242,77,61,.3); }
 
 .spot-grid { gap: 1rem; }
@@ -192,7 +188,6 @@ main { width: min(100%, 1180px); margin: 0 auto; }
   .quick-menu-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .25rem; }
   .qm-card { min-width: 88px; scroll-snap-align: start; }
   .section--dark, .section--soft { max-width: calc(100% - 1rem); border-radius: 30px; }
-  .ticket-stub { display: none; }
   .tl-item { grid-template-columns: 58px 38px 1fr; padding: 1rem .85rem; }
   .tl-item .badge { grid-column: 3; justify-self: start; }
 }
