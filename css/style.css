@@ -435,87 +435,17 @@ main { position: relative; z-index: 1; }
 }
 
 /* ===== TICKET (MATCH) ===== */
-.ticket {
-  max-width: 1000px;
+.match-info-img {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
   margin: 0 auto;
-  display: flex;
-  background: var(--cream);
-  color: var(--ink);
   border-radius: var(--radius);
-  overflow: hidden;
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
-.ticket-main { flex: 1; padding: 2rem 2.2rem; }
-
-.ticket-comp {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  margin: 0 0 1.2rem;
-  letter-spacing: 0.02em;
-}
-
-.ticket-teams {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.4rem;
-}
-
-.team {
-  font-family: var(--serif);
-  font-weight: 800;
-  font-size: clamp(1.1rem, 3vw, 1.6rem);
-}
-.team-home { color: var(--coral-deep); }
-.team-vs {
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  font-weight: 700;
-  background: var(--cream-deep);
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
-}
-
-.ticket-details {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.8rem 1.5rem;
-  border-top: 1px dashed rgba(28,43,74,0.25);
-  padding-top: 1.2rem;
-  margin-bottom: 1rem;
-}
-.td-label {
-  display: block;
-  font-size: 0.68rem;
-  letter-spacing: 0.15em;
-  color: var(--coral);
-  font-weight: 700;
-  margin-bottom: 0.2rem;
-}
-.td-value { display: block; font-size: 0.95rem; font-weight: 600; }
-
-.ticket-note { font-size: 0.82rem; color: var(--ink-soft); margin: 0.5rem 0 0; }
-
-.ticket-stub {
-  width: 130px;
-  flex-shrink: 0;
-  background: var(--coral);
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-  border-left: 2px dashed rgba(255,255,255,0.5);
-  writing-mode: vertical-rl;
-  padding: 1.5rem 0;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-}
-.stub-big { font-size: 1.8rem; writing-mode: horizontal-tb; }
+.ticket-note { font-size: 0.82rem; color: var(--ink-soft); max-width: 480px; margin: 1rem auto 0; text-align: center; }
 
 .ticket-view-btn {
   display: block;
@@ -885,18 +815,6 @@ main { position: relative; z-index: 1; }
 }
 .footer-sub { margin-top: 0.4rem; color: var(--gold); font-family: var(--kr); }
 
-@media (max-width: 640px) {
-  .ticket { flex-direction: column; }
-  .ticket-stub {
-    writing-mode: horizontal-tb;
-    flex-direction: row;
-    width: 100%;
-    border-left: none;
-    border-top: 2px dashed rgba(255,255,255,0.5);
-    padding: 1rem;
-  }
-}
-
 /* ===== Mobile tightening ===== */
 @media (max-width: 600px) {
   .section { padding: 2.8rem 1.1rem; }
@@ -906,7 +824,6 @@ main { position: relative; z-index: 1; }
   .overview-grid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
   .ov-card { padding: 1.2rem 1rem; }
 
-  .ticket-main { padding: 1.5rem 1.3rem; }
   .flight-card { padding: 1.2rem 1.3rem; }
   .flight-route { gap: 0.6rem 1.2rem; }
 
@@ -996,7 +913,6 @@ main { position: relative; z-index: 1; }
   .ov-card, .spot-card, .tip-card, .note-banner, .day-tab { background: #1c2b3e; color: #eee6d8; }
   .section--soft { background: #101a28; }
   .ov-sub, .tl-body p, .spot-card p, .tip-card p, .day-tab-tag { color: #b9b2a3; }
-  .ticket { background: #1c2b3e; color: #eee6d8; }
   .quick-nav-panel { background: #1c2b3e; border-color: rgba(255,255,255,0.1); }
   .quick-nav-link { color: #eee6d8; }
   .quick-nav-link:hover, .quick-nav-link:focus-visible { background: #14202f; }
