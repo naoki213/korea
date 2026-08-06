@@ -141,7 +141,7 @@ main { width: min(100%, 1180px); margin: 0 auto; }
 .tl-item--match .tl-body h4 { color: #ffffff; }
 .tl-item--match .tl-body p { color: rgba(255,255,255,.72); }
 
-.day-header { min-height: 420px; padding: 5rem 1rem 3rem; border: 0; background: linear-gradient(145deg, rgba(3,20,36,.78), rgba(7,63,96,.68)), url('../img/hero-collage.jpg') center 42% / cover; color: white; }
+.day-header { min-height: 420px; padding: 5rem 1rem 3rem; border: 0; background: linear-gradient(145deg, rgba(3,20,36,.78), rgba(7,63,96,.68)), url('../img/hero-photo-clean.jpg') center 30% / cover; color: white; }
 .day-back { display: inline-flex; padding: .55rem .9rem; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; background: rgba(0,0,0,.22); backdrop-filter: blur(10px); }
 .day-switch { width: min(100%, 580px); margin: 2rem auto; padding: .35rem; gap: .35rem; border-radius: 20px; background: rgba(255,255,255,.13); backdrop-filter: blur(14px); }
 .day-pill { border: 0; border-radius: 16px; color: white; }
@@ -266,7 +266,7 @@ body > .day-footer-nav { margin-inline: auto; }
   min-height: 128px;
   background:
     linear-gradient(145deg, rgba(7,45,76,.15), rgba(220,235,228,.45)),
-    url('../img/hero-collage.jpg') 8% 50% / 310% auto;
+    url('../img/hero-photo-clean.jpg') 8% 50% / 310% auto;
 }
 .dash-card--hotel .dash-card__visual { background-position: 52% 46%; }
 .dash-card__visual span { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 18px; background: rgba(255,255,255,.9); font-size: 1.5rem; box-shadow: 0 8px 24px rgba(0,0,0,.15); }
@@ -293,7 +293,7 @@ body > .day-footer-nav { margin-inline: auto; }
   background:
     radial-gradient(circle at 82% 18%, rgba(255,255,255,.34), transparent 16%),
     linear-gradient(115deg, rgba(3,25,44,.96), rgba(5,63,94,.7)),
-    url('../img/hero-collage.jpg') center 70% / cover;
+    url('../img/hero-photo-clean.jpg') center 30% / cover;
   box-shadow: 0 18px 38px rgba(6,28,51,.2);
 }
 .dash-match::after { content: "⚽"; position: absolute; right: -1rem; bottom: -.9rem; font-size: 8rem; filter: grayscale(1); opacity: .18; }
@@ -306,7 +306,7 @@ body > .day-footer-nav { margin-inline: auto; }
 
 .dash-spots h2 { margin: .5rem 0 .65rem; font-size: 1rem; }
 .dash-spots__rail { display: grid; grid-auto-flow: column; grid-auto-columns: 42%; gap: .65rem; overflow-x: auto; padding-bottom: .5rem; scroll-snap-type: x mandatory; }
-.dash-spot { position: relative; min-height: 165px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; padding: .8rem; border-radius: 18px; color: white; text-decoration: none; scroll-snap-align: start; background-image: linear-gradient(transparent 25%, rgba(3,20,36,.9)), url('../img/hero-collage.jpg'); background-size: auto, 320% auto; }
+.dash-spot { position: relative; min-height: 165px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; padding: .8rem; border-radius: 18px; color: white; text-decoration: none; scroll-snap-align: start; background-image: linear-gradient(transparent 25%, rgba(3,20,36,.9)), url('../img/hero-photo-clean.jpg'); background-size: auto, 320% auto; }
 .dash-spot--sea { background-position: center, 0% 45%; }
 .dash-spot--food { background-position: center, 38% 55%; }
 .dash-spot--hanok { background-position: center, 55% 45%; }
