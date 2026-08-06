@@ -306,14 +306,19 @@ body > .day-footer-nav { margin-inline: auto; }
 
 .dash-spots h2 { margin: .5rem 0 .65rem; font-size: 1rem; }
 .dash-spots__rail { display: grid; grid-auto-flow: column; grid-auto-columns: 42%; gap: .65rem; overflow-x: auto; padding-bottom: .5rem; scroll-snap-type: x mandatory; }
-.dash-spot { position: relative; min-height: 165px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; padding: .8rem; border-radius: 18px; color: white; text-decoration: none; scroll-snap-align: start; background-image: linear-gradient(transparent 25%, rgba(3,20,36,.9)), url('../img/hero-photo-clean.jpg'); background-size: auto, 320% auto; }
-.dash-spot--sea { background-position: center, 0% 45%; }
-.dash-spot--food { background-position: center, 38% 55%; }
-.dash-spot--hanok { background-position: center, 55% 45%; }
-.dash-spot--night { background-position: center, 100% 55%; }
-.dash-spot span { align-self: flex-start; padding: .18rem .4rem; border-radius: 999px; background: var(--app-blue); font-size: .6rem; font-weight: 800; }
-.dash-spot strong { margin-top: .35rem; font-size: .84rem; }
-.dash-spot small { color: rgba(255,255,255,.75); font-size: .65rem; }
+.dash-spot {
+  position: relative;
+  display: block;
+  min-height: 165px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: var(--app-shadow-soft);
+  text-decoration: none;
+  scroll-snap-align: start;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.dash-spot:hover, .dash-spot:focus-visible { transform: translateY(-3px); box-shadow: var(--app-shadow); }
+.dash-spot img { display: block; width: 100%; height: 100%; min-height: 165px; object-fit: cover; }
 
 body > main { background: var(--app-bg); }
 body > main .section { padding: 3.8rem 1rem; }
