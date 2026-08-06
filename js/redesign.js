@@ -18,6 +18,40 @@
         <a class="trip-now__arrow" href="#match" aria-label="試合情報を見る">→</a>`;
       hero.insertAdjacentElement('afterend', now);
     }
+
+    if (quickMenu && !document.querySelector('.app-dashboard')) {
+      const dashboard = document.createElement('section');
+      dashboard.className = 'app-dashboard';
+      dashboard.setAttribute('aria-label', '旅のダッシュボード');
+      dashboard.innerHTML = `
+        <a class="dash-card dash-card--transport" href="#flights">
+          <span class="dash-card__visual" aria-hidden="true"><span>🚄</span></span>
+          <span class="dash-card__body"><small>移動の予定</small><strong>16:11 ソウル駅 発</strong><span>18:22 江陵駅 着</span></span>
+          <span class="dash-card__badge">KTX<br><small>約2時間</small></span>
+        </a>
+        <a class="dash-card dash-card--hotel" href="#hotel">
+          <span class="dash-card__visual" aria-hidden="true"><span>🛏</span></span>
+          <span class="dash-card__body"><small>今夜の宿泊先</small><strong>Gangneung<br>the Sharp Hotel</strong><span>江陵駅から車で約2分</span></span>
+          <span class="dash-card__arrow">›</span>
+        </a>
+        <a class="dash-match" href="#match">
+          <span class="dash-match__label">サッカー観戦</span>
+          <strong>江原FC <i>vs</i> ガンバ大阪</strong>
+          <span>8.11 火 · 19:30 KICK OFF</span>
+          <span class="dash-match__place">⌖ 江陵総合運動場</span>
+          <b>試合情報を見る <span>›</span></b>
+        </a>
+        <div class="dash-spots">
+          <h2>おすすめグルメ＆スポット</h2>
+          <div class="dash-spots__rail">
+            <a href="#spots" class="dash-spot dash-spot--sea"><span>江陵</span><strong>鏡浦台ビーチ</strong><small>美しい海とカフェ通り</small></a>
+            <a href="#spots" class="dash-spot dash-spot--food"><span>江陵</span><strong>スンドゥブ</strong><small>名物グルメを楽しむ</small></a>
+            <a href="#spots" class="dash-spot dash-spot--hanok"><span>ソウル</span><strong>景福宮</strong><small>韓国の歴史を体感</small></a>
+            <a href="#spots" class="dash-spot dash-spot--night"><span>ソウル</span><strong>広蔵市場</strong><small>ローカルグルメ巡り</small></a>
+          </div>
+        </div>`;
+      quickMenu.insertAdjacentElement('afterend', dashboard);
+    }
   }
 
   if (!document.querySelector('.app-bottom-nav')) {
