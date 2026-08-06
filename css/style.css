@@ -64,9 +64,7 @@ a { color: inherit; }
 .hero-photo-img {
   display: block;
   width: 100%;
-  max-width: 640px;
   height: auto;
-  margin: 0 auto;
 }
 
 /* ===== QUICK MENU ===== */
@@ -870,13 +868,6 @@ main { position: relative; z-index: 1; }
 
 /* ===== Mobile tightening ===== */
 @media (max-width: 600px) {
-  .hero { padding: 3rem 1.1rem 2rem; }
-  .hero-sub { font-size: 0.92rem; }
-  .hero-meta { gap: 0.6rem; margin-top: 1.8rem; }
-  .hero-meta-item { min-width: 0; width: 100%; padding: 0.7rem 1.1rem; }
-  .hero-nav { gap: 0.3rem 1rem; margin-top: 1.8rem; }
-  .hero-nav a { font-size: 0.8rem; }
-
   .section { padding: 2.8rem 1.1rem; }
   .section--dark, .section--soft { padding: 2.8rem 1.1rem; }
   .section-title { margin-bottom: 1.4rem; gap: 0.6rem; }
