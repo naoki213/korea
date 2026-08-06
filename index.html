@@ -288,6 +288,7 @@
         <span>GANGNEUNG</span>
       </div>
     </div>
+    <button type="button" class="ticket-view-btn" id="ticketViewBtn">🎫 チケットを見る</button>
     <p class="source-line">出典: <a href="https://www.gamba-osaka.net/news/index/no/20580/" target="_blank" rel="noopener">ガンバ大阪オフィシャルサイト</a></p>
   </section>
 
@@ -460,7 +461,20 @@
   </div>
 </div>
 
+<!-- ===== TICKET MODAL ===== -->
+<div class="modal-backdrop" id="ticketModalBackdrop" hidden>
+  <div class="modal modal--ticket" id="ticketModal" role="dialog" aria-modal="true" aria-labelledby="ticketModalTitle">
+    <button type="button" class="modal-close" id="ticketModalClose" aria-label="閉じる">✕</button>
+    <h3 class="modal-title" id="ticketModalTitle">🎫 観戦チケット</h3>
+    <div class="ticket-modal-images">
+      <img src="img/match-ticket-1.jpg" alt="観戦チケットのスクリーンショット1" loading="lazy">
+      <img src="img/match-ticket-2.jpg" alt="観戦チケットのスクリーンショット2" loading="lazy">
+    </div>
+  </div>
+</div>
+
 <script src="js/spots.js"></script>
+<script src="js/ticketmodal.js"></script>
 <script src="js/quicknav.js"></script>
 <script src="js/qrtoggle.js"></script>
 </body>
