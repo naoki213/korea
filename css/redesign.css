@@ -114,16 +114,20 @@ main { width: min(100%, 1180px); margin: 0 auto; }
 .ov-card { padding: 1.5rem; }
 .ov-card--accent { background: var(--app-red); color: white; }
 .note-banner { border: 0; border-radius: 20px; background: var(--app-mint); }
+.note-banner--dark { color: var(--app-navy); }
 
 .flight-card { overflow: hidden; }
 .flight-tag, .badge { border-radius: 999px; }
-.flight-time { font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
+.flight-time { font-variant-numeric: tabular-nums; letter-spacing: -.04em; color: var(--app-navy); }
+.flight-airport, .flight-meta, .flight-date { color: #657280; }
 .hotel-map { filter: saturate(.75) contrast(.95); }
 .hotel-link { border-radius: 999px; }
 
 .ticket { border: 1px solid rgba(255,255,255,.16); border-radius: 28px; background: linear-gradient(145deg, #082743, #061827); box-shadow: 0 28px 70px rgba(0,0,0,.25); }
-.ticket-main { padding: clamp(1.5rem, 5vw, 3rem); }
+.ticket-main { padding: clamp(1.5rem, 5vw, 3rem); color: #eef2f5; }
 .ticket-comp { color: #8fb1c9; }
+.td-value { color: #eef2f5; }
+.ticket-note { color: #9fb4c4; }
 .ticket-teams { font-size: clamp(1.4rem, 5vw, 2.5rem); }
 .ticket-view-btn { background: var(--app-red); color: white; box-shadow: 0 12px 28px rgba(242,77,61,.3); }
 
@@ -138,6 +142,8 @@ main { width: min(100%, 1180px); margin: 0 auto; }
 .tl-icon { border-radius: 14px; background: var(--app-mint); }
 .tl-item--match { color: white; background: linear-gradient(135deg, #082e4f, #061827); }
 .tl-item--match .tl-time { color: #ff796d; }
+.tl-item--match .tl-body h4 { color: #ffffff; }
+.tl-item--match .tl-body p { color: rgba(255,255,255,.72); }
 
 .day-header { min-height: 420px; padding: 5rem 1rem 3rem; border: 0; background: linear-gradient(145deg, rgba(3,20,36,.78), rgba(7,63,96,.68)), url('../img/hero-collage.jpg') center 42% / cover; color: white; }
 .day-back { display: inline-flex; padding: .55rem .9rem; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; background: rgba(0,0,0,.22); backdrop-filter: blur(10px); }
@@ -336,4 +342,15 @@ body > .footer { background: var(--app-navy); }
   .dash-card__body strong { font-size: .92rem; }
   .dash-card__badge { margin-right: .65rem; padding: .55rem .65rem; }
   .dash-spots__rail { grid-auto-columns: 58%; }
+}
+
+/* Cards are always light in this design, even on phones set to system dark
+   mode — override the old dark-mode text colors (from style.css) so they
+   don't go light-on-light against these surfaces. */
+@media (prefers-color-scheme: dark) {
+  .ov-card, .spot-card, .tip-card, .day-tab { color: var(--app-navy); }
+  .note-banner { color: var(--app-navy); }
+  .ov-sub, .tl-body p, .spot-card p, .tip-card p, .day-tab-tag { color: #657280; }
+  .quick-nav-link { color: var(--app-navy); }
+  .quick-nav-link--primary { color: var(--coral-deep); }
 }
