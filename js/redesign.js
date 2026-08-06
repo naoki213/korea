@@ -44,10 +44,10 @@
         <div class="dash-spots">
           <h2>おすすめグルメ＆スポット</h2>
           <div class="dash-spots__rail">
-            <a href="#spots" class="dash-spot dash-spot--sea"><span>江陵</span><strong>鏡浦台ビーチ</strong><small>美しい海とカフェ通り</small></a>
-            <a href="#spots" class="dash-spot dash-spot--food"><span>江陵</span><strong>スンドゥブ</strong><small>名物グルメを楽しむ</small></a>
-            <a href="#spots" class="dash-spot dash-spot--hanok"><span>ソウル</span><strong>景福宮</strong><small>韓国の歴史を体感</small></a>
-            <a href="#spots" class="dash-spot dash-spot--night"><span>ソウル</span><strong>広蔵市場</strong><small>ローカルグルメ巡り</small></a>
+            <a href="spot-gwangjang.html" class="dash-spot"><img src="img/spot-gwangjang.jpg" alt="広蔵市場 ローカルグルメと活気あふれる市場" loading="lazy"></a>
+            <a href="spot-dragoncity.html" class="dash-spot"><img src="img/spot-dragoncity.jpg" alt="ドラゴンシティカジノ ホテル内の本格カジノで特別な体験を" loading="lazy"></a>
+            <a href="spot-seoultower.html" class="dash-spot"><img src="img/spot-seoultower.jpg" alt="ソウルタワー ソウルの絶景を一望できる人気スポット" loading="lazy"></a>
+            <a href="spot-gyeongbokgung.html" class="dash-spot"><img src="img/spot-gyeongbokgung.jpg" alt="景福宮 朝鮮王朝の歴史を感じる美しい宮殿" loading="lazy"></a>
           </div>
         </div>`;
       quickMenu.insertAdjacentElement('afterend', dashboard);
