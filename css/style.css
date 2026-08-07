@@ -463,6 +463,21 @@ main { position: relative; z-index: 1; }
   margin: 0 0 1.8rem;
 }
 
+.spot-detail-gallery { margin: 0 0 1.8rem; }
+.spot-detail-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.spot-detail-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
 .spot-detail-heading {
   font-family: var(--serif);
   font-size: 1.15rem;
