@@ -714,6 +714,17 @@ main { position: relative; z-index: 1; }
   box-shadow: var(--shadow);
 }
 
+.tl-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 0.7rem;
+  box-shadow: var(--shadow);
+}
+
 @media (max-width: 560px) {
   .tl-item { grid-template-columns: 52px 30px 1fr; }
   .tl-item .badge { grid-column: 3; justify-self: start; margin-top: 0.3rem; }
